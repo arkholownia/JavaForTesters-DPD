@@ -5,7 +5,9 @@ public class Task10 {
         System.out.println(bookDetails("Hobbit", "Tolkien", "David Wyatt"));
     }
 
-    public static String bookDetails(String title, String author, String illustrator) {
-        return "";
+    public static String bookDetails(String title, String author, String publisher) {
+        return title + ", autorstwa "+author+", wydany przez "+publisher;
+
+
     }
 }
