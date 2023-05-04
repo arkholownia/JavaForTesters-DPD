@@ -1,5 +1,6 @@
 package a_introduction;
 
+import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 public class Task11 {
@@ -10,9 +11,25 @@ public class Task11 {
         double price = 1.12;
         double discount = 0.13;
         double expectedSum = 6.82;
+        boolean isCorrect = validateSumWithDiscountBigDecima(pcs, price, discount, expectedSum);
+//        boolean isCorrect = validateSumWithDiscount(pcs, price, discount, expectedSum);
+//        System.out.println("So, result is:\t"+ isCorrect);
+    }
+    public static boolean validateSumWithDiscountBigDecima(int pcs, double price, double discount, double expectedSum) {
 
-        boolean isCorrect = validateSumWithDiscount(pcs, price, discount, expectedSum);
-        System.out.println("So, result is:\t"+ isCorrect);
+        String sPrice = ""+price;
+        String sDiscount = ""+discount;
+        String sExpectSum = ""+expectedSum;
+
+
+        BigDecimal cenaBezRabatu = new BigDecimal(sPrice );
+
+        System.out.println("price is: " +cenaBezRabatu);
+
+        if (1==1)  {
+            return true;
+        }
+        return false;
     }
 
     public static boolean validateSumWithDiscount(int pcs, double price, double discount, double expectedSum) {
